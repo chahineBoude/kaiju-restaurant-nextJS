@@ -1,0 +1,139 @@
+.app__navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-black);
+  padding: 1rem 1rem;
+  z-index: 3;
+}
+
+.app__navbarLogo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+}
+
+.app__navbarLogo img {
+  width: 125px;
+  height: auto;
+}
+
+.app__navbarLinks {
+  display: flex;
+  flex: content;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.app__navbarLinks li {
+  margin: 0 1rem;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.app__navbarLinks li:hover {
+  color: var(--color-grey);
+}
+
+.app__navbarBooking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__navbarBooking a {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.app__navbarBooking a:hover {
+  color: var(--color-grey);
+  border-bottom: 1px solid var(--color-golden);
+}
+
+.app__navbarSmallscreen {
+  display: none;
+}
+
+.app__navbarSmallscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--color-black);
+  transition: 2s ease;
+
+  flex-direction: column;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+}
+.app__navbarSmallscreenOverlay .overlay__close {
+  font-size: 27px;
+  color: var(--color-golden);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbarSmallscreenOverlay .overlay__close:hover {
+  color: var(--color-grey);
+}
+
+.app__navbarSmallscreenLinks {
+  list-style: none;
+}
+
+.app__navbarSmallscreenLinks li {
+  margin: 4rem;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-base);
+}
+
+.app__navbarSmallscreenLinks li:hover {
+  color: var(--color-grey);
+}
+
+@media screen and (min-width: 2000px) {
+  .app__navbarLinks li {
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+  .app__navbarLogo img {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1999px) {
+  .app__navbarLinks li {
+    margin: 0 2rem;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__navbarLinks {
+    display: none;
+  }
+  .app__navbarBooking {
+    display: none;
+  }
+  .app__navbarSmallscreen {
+    display: flex;
+  }
+}
+@media screen and (max-width: 650px) {
+  .app__navbarLogo img {
+    width: 100px;
+  }
+}

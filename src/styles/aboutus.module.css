@@ -1,0 +1,106 @@
+.app__aboutus {
+  position: relative;
+  z-index: 1;
+}
+
+.app__aboutusContainer {
+  background: url("../../assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  height: 1000px;
+}
+
+.app__aboutusOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.app__aboutusOverlay img {
+  width: 500px;
+  height: 520px;
+  z-index: 0;
+}
+
+.app__aboutusContent {
+  width: 100%;
+  z-index: 2;
+}
+
+.app__aboutusContentAbout {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+}
+
+.app__aboutusContentKnife {
+  margin: 2rem 6rem;
+}
+.app__aboutusContentKnife img {
+  height: 800px;
+  width: auto;
+}
+
+.app__aboutusContentHistory {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+.app__aboutusContentHistory p {
+  margin: 2rem 0;
+}
+.app__aboutusContentAbout p {
+  margin: 2rem 0;
+}
+
+.app__aboutusContentAboutSpoon {
+  width: 45px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 900px) {
+  .app__aboutusContent {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .app__aboutusContentKnife {
+    margin: 3rem 0;
+  }
+
+  .app__aboutusContainer {
+    height: 100%;
+  }
+  .app__aboutusContentAbout {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .app__aboutusContentAboutSpoon {
+    width: 45px;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__aboutusOverlay img {
+    width: 250px;
+    height: 270px;
+  }
+  .app__aboutusContentKnife img {
+    height: 500px;
+  }
+}

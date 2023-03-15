@@ -1,0 +1,135 @@
+.app__menuSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+.app__menuSectionImageFood,
+.app__menuSectionImageDrink,
+.app__menuSectionImageDessert,
+.app__menuSectionImageSmDrink {
+  width: 280px;
+  height: 320px;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__menuSectionImageFood img,
+.app__menuSectionImageDrink img,
+.app__menuSectionImageDessert img,
+.app__menuSectionImageSmDrink img {
+  height: 100%;
+  width: auto;
+}
+
+.app__menuSectionImageFood,
+.app__menuSectionImageDessert {
+  border: 10px solid var(--color-golden);
+  margin-right: 5rem;
+}
+
+.app__menuSectionImageDrink {
+  margin-left: 5rem;
+}
+
+.app__menuSectionImageDessert img {
+  width: 100%;
+}
+
+.app__menuSectionHeaderFood,
+.app__menuSectionHeaderDessert {
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 65%;
+  margin-left: 5rem;
+}
+
+.app__menuSectionHeaderFood p,
+.app__menuSectionHeaderDessert p,
+.app__menuSectionHeaderSmDrink p {
+  line-height: 60px;
+  letter-spacing: 0.15rem;
+}
+
+.app__menuSectionHeaderDrink {
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  width: 65%;
+  margin-right: 5rem;
+}
+
+.app__menuSectionHeaderDrink p {
+  line-height: 60px;
+  letter-spacing: 0.15rem;
+}
+
+.app__menuSectionImageSmallscreen {
+  display: none;
+  align-items: center;
+}
+
+@media screen and (min-width: 1900px) {
+  .app__menuSectionImageFood,
+  .app__menuSectionImageDrink,
+  .app__menuSectionImageDessert {
+    position: relative;
+    width: 380px;
+    height: 420px;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__menuSection {
+    justify-content: center;
+    align-items: center;
+  }
+  .app__menuSectionHeaderDessert,
+  .app__menuSectionHeaderDrink,
+  .app__menuSectionHeaderFood,
+  .app__menuSectionHeaderSmDrink {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .app__menuSectionImageDrink,
+  .app__menuSectionHeaderDrink {
+    display: none;
+  }
+
+  .app__menuSectionImageSmallscreen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__menuSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .app__menuSectionHeaderSmDrink,
+  .app__menuSectionHeaderFood,
+  .app__menuSectionHeaderDessert {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__menuSectionImageFood,
+  .app__menuSectionImageDessert,
+  .app__menuSectionImageSmDrink {
+    width: 180px;
+    height: 240px;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,65 @@
+.app__menuItem {
+  width: 100%;
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__menuItem_head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.app__menuItem_tags {
+  width: 100%;
+  margin-top: 0.2rem;
+}
+
+.app__menuItem_tags p {
+  font-size: 15px;
+
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+.app__menuItem_name p,
+.app__menuItem_price p {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.4em;
+  width: 100%;
+}
+
+.app__menuItem_dash {
+  width: 90%;
+  height: 1px;
+  background: white;
+  margin: 0 2rem;
+}
+
+.app__menuItem_price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 650px) {
+  .app__menuItem {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  .app__menuItem_name p,
+  .app__menuItem_price p {
+    font-size: 25px;
+  }
+  .app__menuItem_tags p {
+    font-size: 12px;
+  }
+  .app__menuItem_dash {
+    opacity: 0;
+  }
+}
