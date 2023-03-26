@@ -4,7 +4,7 @@ import images from "../../../constants/images";
 import Image from "next/image";
 
 const FindUs = () => (
-  <div className="app__bg " id="contact">
+  <div className="app__bg " id="contact" style={{ paddingBottom: "3rem" }}>
     <div
       className=" app__wrapper section__padding app__bg-2"
       style={{ margin: "0 2rem" }}

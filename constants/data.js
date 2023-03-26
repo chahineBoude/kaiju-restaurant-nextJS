@@ -14,7 +14,7 @@ const drinks = [
   {
     title: "Homemade yuzu lemonade",
     price: "€5",
-    tags: "PALCEHOLDER",
+    tags: "FRESHLY MADE YUZU LEMONADE",
   },
   {
     title: "Ramune japanese lemonade",
@@ -53,42 +53,19 @@ const food = [
 
 const desserts = [
   {
-    title: "Bao Pork belly ",
-    price: "€13",
-    tags: "BBQ PORK BELLY BUNS | 2 PCS",
+    title: "DANGO",
+    price: "€5",
+    tags: "SWEET RICE DUMPLINGS ON A SKEWER | 2 PC",
   },
   {
-    title: "Bao Pork belly ",
-    price: "€13",
-    tags: "BBQ PORK BELLY BUNS | 2 PCS",
+    title: "MATCHA SWISS ROLL",
+    price: "€7",
+    tags: "FLUFFY SPONGE CAKE ROLLED UP WITH FRESH MATCHA CREAM IN THE MIDDLE",
   },
   {
-    title: "Bao Pork belly ",
-    price: "€13",
-    tags: "BBQ PORK BELLY BUNS | 2 PCS",
-  },
-];
-
-const awards = [
-  {
-    imgUrl: images.award02,
-    title: "Bib Gourmond",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
-  },
-  {
-    imgUrl: images.award01,
-    title: "Rising Star",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
-  },
-  {
-    imgUrl: images.award05,
-    title: "AA Hospitality",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
-  },
-  {
-    imgUrl: images.award03,
-    title: "Outstanding Chef",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    title: "JAPANESE PANCAKES",
+    price: "€7",
+    tags: "SOFT PILLOWY SOUFFLE STYLE PANCAKES WITH WHIPPED CREAM | 3 PCS",
   },
 ];
 
@@ -113,4 +90,4 @@ const menu_page = [
   },
 ];
 
-export default { drinks, food, desserts, awards, menu_page };
+export default { drinks, food, desserts, menu_page };

@@ -1,0 +1,135 @@
+.app__footer {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.app__footer_links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+
+.app__footer_links_contact,
+.app__footer_links_logo,
+.app__footer_links_work {
+  flex: 1;
+  margin: 1rem;
+  text-align: center;
+}
+
+.app__footer_links_logo img:first-child {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 0.75rem;
+}
+
+.app__footer_links_work p {
+  margin-bottom: 0.5rem;
+}
+
+.app__footer_links_icons {
+  margin-top: 0.5rem;
+}
+
+.app__footer_links_icons svg {
+  color: var(--color-white);
+  margin: 0.5rem;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.app__footer_links_icons svg:hover {
+  color: var(--color-gray);
+}
+
+.app__footer_headtext {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 1rem;
+}
+
+.footer__copyright {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer__copyright p,
+.footer__copyright a,
+.footer__copyright svg {
+  font-size: 14px;
+}
+
+.footer__copyright svg {
+  color: var(--color-white);
+}
+
+.footer__copyright a:hover {
+  color: var(--color-gray);
+  text-decoration: underline dashed;
+}
+
+@media screen and (min-width: 1920px) {
+  .app__footer_links {
+    margin-top: 2rem;
+  }
+  .app__footer_headtext {
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+  .app__footer_links_logo img:first-child {
+    width: 300px;
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__footer_links {
+    align-items: center;
+    flex-direction: column;
+  }
+  .app__footer_links_contact,
+  .app__footer_links_logo,
+  .app__footer_links_work {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .app__footer {
+    padding: 0 0 0 0;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .app__footer_links_logo img:first-child {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer__copyright {
+    justify-content: flex-start;
+  }
+  .footer__copyright svg {
+    margin-right: 5px;
+  }
+  .footer__copyright p,
+  .footer__copyright a {
+    font-size: 7px;
+  }
+}

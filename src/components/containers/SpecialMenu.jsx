@@ -14,7 +14,7 @@ const SpecialMenu = () => {
         className={`${styles.app__specialMenuContainer} flex__center section__padding`}
       >
         <div className={styles.app__specialMenuTitle}>
-          <SubHeading title="More trendy Bullshit who cares" />
+          <SubHeading title="Experience authenticity" />
           <h1 className="headtext__oswald"> Explore Our Menu </h1>
         </div>
         <div className={styles.app__specialMenuMenu}>

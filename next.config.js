@@ -6,6 +6,15 @@ const nextConfig = {
 module.exports = nextConfig;
 
 module.exports = {
+  env: {
+    INSTA_API_ID: process.env.INSTA_API_ID,
+    INSTA_API_KEY: process.env.INSTA_API_KEY,
+  },
+
+  images: {
+    domains: ["scontent.cdninstagram.com"],
+  },
+
   webpack: (config) => {
     config.module.rules.push({
       test: /\.mp4$/,
@@ -23,16 +32,3 @@ module.exports = {
 };
 
 require("dotenv").config();
-
-module.exports = {
-  env: {
-    INSTA_API_ID: process.env.INSTA_API_ID,
-    INSTA_API_KEY: process.env.INSTA_API_KEY,
-  },
-};
-
-module.exports = {
-  images: {
-    domains: ["scontent.cdninstagram.com"],
-  },
-};

@@ -13,7 +13,7 @@ const Header = () => {
       <div className={headStyles.app__headerContainer}>
         <div className="app__wrapper_info">
           <SubHeading title="Random Trendy Tagline" />
-          <h1 className={headStyles.app__headerH1}>Random Trendy Bullshit</h1>
+          <h1 className={headStyles.app__headerH1}>Random Trendy Title</h1>
           <p className="p__roboto" style={{ margin: "2rem 0" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
