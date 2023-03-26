@@ -17,7 +17,7 @@ const MainMenu = () => {
         className={`${styles.app__mainMenu_container} flex__center section__padding`}
       >
         <div className={`${styles.app__mainMenu_title} flex__center`}>
-          <SubHeading title="More trendy Bullshit who cares" />
+          <SubHeading title="Experience Authenticity" />
           <h1 className="headtext__oswald"> Explore Our Menu </h1>
         </div>
 
