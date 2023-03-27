@@ -4,8 +4,8 @@ import Layout from "@/components/Layout";
 const Menu = () => (
   <div>
     <Head>
-      <title>Kaiju Restaurant</title>
-      <meta property="og:title" content="Kaiju Restaurant" key="title" />
+      <title>Menu</title>
+      <meta property="og:menu" content="Menu Page" key="menu" />
     </Head>
     <Layout>
       <MainMenu />
