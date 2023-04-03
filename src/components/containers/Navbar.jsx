@@ -23,7 +23,7 @@ const Navbar = () => {
           <a href="/#about">About </a>
         </li>
         <li className="p__roboto">
-          <a href="/#menu">Menu</a>
+          <a href="/#men">Menu</a>
         </li>
         <li className="p__roboto">
           <a href="/#contact">Contact</a>
@@ -76,7 +76,7 @@ const Navbar = () => {
               </li>
               <li className="p__roboto">
                 <a
-                  href="/#menu"
+                  href="/#men"
                   onClick={() => {
                     setToggleMenu(false);
                   }}

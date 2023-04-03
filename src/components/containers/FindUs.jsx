@@ -15,10 +15,43 @@ const FindUs = () => (
           Find Us
         </h1>
         <div className="app__wrapper-content">
-          <p className="p__roboto">123 Street Name, City, Country</p>
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              flexDirection: "row",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginRight: "5rem",
+              }}
+            >
+              <p
+                className="p__oswald"
+                style={{ color: "#DCCA87", margin: "1rem 0" }}
+              >
+                Address
+              </p>
+              <p className="p__roboto">123 Street Name, City, Country</p>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <p
+                className="p__oswald"
+                style={{ color: "#DCCA87", margin: "1rem 0" }}
+              >
+                Email
+              </p>
+              <p className="p__roboto" style={{ textTransform: "lowercase" }}>
+                chahineboude@gmail.com
+              </p>
+            </div>
+          </div>
           <p
             className="p__oswald"
-            style={{ color: "#DCCA87", margin: "2rem 0" }}
+            style={{ color: "#DCCA87", margin: "1rem 0" }}
           >
             Opening hours
           </p>

@@ -11,8 +11,11 @@ const AboutUs = () => (
     <div
       className={`${abstyles.app__aboutusContainer} flex__center section__padding`}
     >
-      <div className={`${abstyles.app__aboutusOverlay} flex__center`}>
-        <Image src={images.G} alt="bg-overlay" />
+      <div className={`${abstyles.app__aboutusOverlay_hor} flex__center`}>
+        <Image src={images.kanji} alt="bg-overlay" />
+      </div>
+      <div className={`${abstyles.app__aboutusOverlay_ver} flex__center`}>
+        <Image src={images.kanjiV} alt="bg-overlay" />
       </div>
       <div className={`${abstyles.app__aboutusContent} flex__center`}>
         <div className={abstyles.app__aboutusContentAbout}>

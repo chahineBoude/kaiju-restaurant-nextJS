@@ -82,8 +82,12 @@
 }
 
 @media screen and (min-width: 1920px) {
+  .app__footer_links_work p {
+    margin-bottom: 0;
+  }
+
   .app__footer_links {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .app__footer_headtext {
     font-size: 55px;

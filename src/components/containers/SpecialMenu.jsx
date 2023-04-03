@@ -8,7 +8,7 @@ const SpecialMenu = () => {
   return (
     <div
       className={`${styles.app__specialMenu} section__padding app__bg`}
-      id="menu"
+      id="men"
     >
       <div
         className={`${styles.app__specialMenuContainer} flex__center section__padding`}

@@ -10,18 +10,23 @@
   background-repeat: repeat;
   background-attachment: fixed;
   z-index: 1;
-  height: 1000px;
+  height: 750px;
 }
 
-.app__aboutusOverlay {
+.app__aboutusOverlay_hor,
+.app__aboutusOverlay_ver {
   position: absolute;
   inset: 0;
 }
 
-.app__aboutusOverlay img {
-  width: 500px;
-  height: 520px;
+.app__aboutusOverlay_hor img {
+  width: 1678px;
+  height: 480px;
   z-index: 0;
+}
+
+.app__aboutusOverlay_ver img {
+  display: none;
 }
 
 .app__aboutusContent {
@@ -42,7 +47,7 @@
   margin: 2rem 6rem;
 }
 .app__aboutusContentKnife img {
-  height: 800px;
+  height: 650px;
   width: auto;
 }
 
@@ -68,7 +73,11 @@
   transform: scaleX(-1);
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
+  .app__aboutusOverlay img {
+    width: 1878px;
+    height: 630px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -93,12 +102,22 @@
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+
+  .app__aboutusOverlay_hor img {
+    display: none;
+  }
+
+  .app__aboutusOverlay_ver img {
+    display: block;
+    height: 800px;
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .app__aboutusOverlay img {
     width: 250px;
-    height: 270px;
+    height: 500px;
   }
   .app__aboutusContentKnife img {
     height: 500px;

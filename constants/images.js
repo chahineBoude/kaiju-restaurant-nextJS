@@ -1,5 +1,4 @@
 import bg from "../assets/bg.png";
-import G from "../assets/G.png";
 import knife from "../assets/knife.png";
 import overlaybg from "../assets/overlaybg.png";
 import spoon from "../assets/spoon.svg";
@@ -10,10 +9,11 @@ import karaage from "../assets/karaage.jpg";
 import ramune from "../assets/ramune.jpg";
 import dango from "../assets/dango.webp";
 import alley from "../assets/japan.jpg";
+import kanji from "../assets/kaiju-jp.png";
+import kanjiV from "../assets/kaiju-vertical.png";
 
 export default {
   bg,
-  G,
   knife,
   overlaybg,
   spoon,
@@ -24,4 +24,6 @@ export default {
   ramune,
   dango,
   alley,
+  kanji,
+  kanjiV,
 };
