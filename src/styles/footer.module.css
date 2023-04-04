@@ -124,7 +124,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .footer__copyright {
     justify-content: flex-start;
   }
@@ -134,5 +134,12 @@
   .footer__copyright p,
   .footer__copyright a {
     font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer__copyright p,
+  .footer__copyright a {
+    font-size: 5px;
   }
 }

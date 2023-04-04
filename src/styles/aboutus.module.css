@@ -74,9 +74,16 @@
 }
 
 @media screen and (min-width: 1920px) {
-  .app__aboutusOverlay img {
+  .app__aboutusOverlay_hor img {
     width: 1878px;
     height: 630px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .app__aboutusOverlay_hor img {
+    width: 1078px;
+    height: 330px;
   }
 }
 
@@ -115,9 +122,9 @@
 }
 
 @media screen and (max-width: 650px) {
-  .app__aboutusOverlay img {
-    width: 250px;
-    height: 500px;
+  .app__aboutusOverlay_ver img {
+    width: 350px;
+    height: 650px;
   }
   .app__aboutusContentKnife img {
     height: 500px;
